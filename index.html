@@ -4,9 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="love animation.css">
-  <title>Love Animation</title>
+  <title>Happy first anniversary!</title>
+  <style>
+  .anniversary-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Segoe Script', cursive;
+    font-size: 10em;
+    color: #ff69b4;
+    animation: fadeIn 2s ease-in-out;
+  }
+  .anniversary-day {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Segoe Script', cursive;
+    font-size: 4em;
+    color: #ff69b4;
+    animation: fadeIn 2s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
 </head>
 <body>
+  <h1 class="anniversary-text">Happy first anniversary!</h1>
+  <h3 class="anniversary-day">25/6/2025</h3>
   <div class="container"></div>
   <svg class="svg-container" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
     <line class="line line--left" x1="10" y1="17" x2="10" y2="183"> </line>
@@ -23,6 +52,7 @@
     </g>
   </svg>
   <div class="mo-container"> </div>
+
 </div>
 
 
@@ -36,5 +66,6 @@
 
  <script src="//cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
  <script src="love animation.js"></script>
+ 
 </body>
 </html>
